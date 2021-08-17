@@ -14,6 +14,7 @@ const MainContentContainer = styled.div`
     margin: 0px 10px;
   }
 `;
+
 export const MainContent: React.FC<MainContentProps> = () => (
   <MainContentContainer>
     <AppPreview />
