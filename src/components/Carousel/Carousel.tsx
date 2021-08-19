@@ -10,6 +10,7 @@ interface CarouselProps {
   autoPlaySpeed?: number;
   shouldShowArrows?: boolean;
   isDraggable?: boolean;
+  shouldUseFade?: boolean;
 }
 
 export const Carousel: React.FC<CarouselProps> = ({
@@ -21,6 +22,7 @@ export const Carousel: React.FC<CarouselProps> = ({
   children,
   shouldShowArrows,
   isDraggable,
+  shouldUseFade,
 }) => (
   <Slider
     dots={shouldShowDots ?? true}
@@ -31,6 +33,7 @@ export const Carousel: React.FC<CarouselProps> = ({
     adaptiveHeight
     arrows={shouldShowArrows ?? true}
     draggable={isDraggable ?? true}
+    fade={shouldUseFade}
   >
     {children}
   </Slider>
