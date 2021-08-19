@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Carousel } from '../../../components/Carousel/Carousel';
+import { Carousel } from '../../../../components/Carousel/Carousel';
 import { imagesData } from './imagesData';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface

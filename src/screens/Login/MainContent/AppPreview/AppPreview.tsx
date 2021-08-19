@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { blackIphone, iPhone } from '../../../assets';
+import { blackIphone, iPhone } from '../../../../assets';
 import { AppImages } from './AppImages';
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface AppPreviewProps {}
