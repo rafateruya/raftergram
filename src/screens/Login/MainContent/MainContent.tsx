@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { AppPreview } from './AppPreview/AppPreview';
-import { UserInteractions } from './UserInteractions';
+import { UserInteractions } from './UserInteractions/UserInteractions';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface MainContentProps {}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { LoginForm } from './LoginForm';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface UserInteractionsProps {}
@@ -10,5 +11,8 @@ const UserInteractionsContainer = styled.div`
   background: purple;
 `;
 export const UserInteractions: React.FC<UserInteractionsProps> = () => (
-  <UserInteractionsContainer>USER INTERACTIONS</UserInteractionsContainer>
+  <UserInteractionsContainer>
+    <LoginForm />
+    USER INTERACTIONS
+  </UserInteractionsContainer>
 );
