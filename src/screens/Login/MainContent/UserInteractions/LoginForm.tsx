@@ -18,12 +18,12 @@ const AppName = styled.h1`
   font-weight: 100;
   padding: 0 50px;
 `;
+
 const LoginInputsWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: red;
 `;
 
 export const LoginForm: React.FC<LoginFormProps> = () => (
