@@ -8,11 +8,9 @@ interface UserInteractionsProps {}
 const UserInteractionsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  background: purple;
 `;
 export const UserInteractions: React.FC<UserInteractionsProps> = () => (
   <UserInteractionsContainer>
     <LoginForm />
-    USER INTERACTIONS
   </UserInteractionsContainer>
 );

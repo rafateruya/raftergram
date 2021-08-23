@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Button } from '../../../../components/Button/Button';
 import { TextInput } from '../../../../components/TextInput/TextInput';
+import { OtherOptionsDivider } from './OtherOptionsDivider';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface LoginInputsProps {}
@@ -32,6 +33,7 @@ export const LoginInputs: React.FC<LoginInputsProps> = () => {
           console.log('dsa');
         }}
       />
+      <OtherOptionsDivider />
     </LoginInputsWrapper>
   );
 };

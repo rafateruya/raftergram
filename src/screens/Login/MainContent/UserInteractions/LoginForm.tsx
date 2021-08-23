@@ -32,5 +32,7 @@ export const LoginForm: React.FC<LoginFormProps> = () => (
     <LoginInputsWrapper>
       <LoginInputs />
     </LoginInputsWrapper>
+    <div>Entrar com o Facebook</div>
+    <div>Esqueceu a senha ?</div>
   </LoginFormWrapper>
 );
