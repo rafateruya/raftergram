@@ -6,8 +6,9 @@ import { AppImages } from './AppImages';
 interface AppPreviewProps {}
 
 const AppPreviewWrapper = styled.div`
-  width: 400px;
+  width: 470px;
   height: 550px;
+  flex: 1;
 `;
 
 const ImageWrapper = styled.div`

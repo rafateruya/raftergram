@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FacebookLogin } from './FacebookLogin';
+import { ForgotPassword } from './ForgotPassword';
 import { LoginInputs } from './LoginInputs';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -17,6 +19,7 @@ const AppName = styled.h1`
   font-size: 40px;
   font-weight: 100;
   padding: 0 50px;
+  text-align: center;
 `;
 
 const LoginInputsWrapper = styled.div`
@@ -31,8 +34,8 @@ export const LoginForm: React.FC<LoginFormProps> = () => (
     <AppName>Raftergram</AppName>
     <LoginInputsWrapper>
       <LoginInputs />
+      <FacebookLogin />
+      <ForgotPassword />
     </LoginInputsWrapper>
-    <div>Entrar com o Facebook</div>
-    <div>Esqueceu a senha ?</div>
   </LoginFormWrapper>
 );
