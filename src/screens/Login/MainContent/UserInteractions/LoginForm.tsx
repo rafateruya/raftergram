@@ -3,16 +3,10 @@ import styled from 'styled-components';
 import { FacebookLogin } from './FacebookLogin';
 import { ForgotPassword } from './ForgotPassword';
 import { LoginInputs } from './LoginInputs';
+import { UserInteractionBox } from './UserInteractionBox';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 interface LoginFormProps {}
-
-const LoginFormWrapper = styled.div`
-  background: #ffffff;
-  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
-  margin: 10px;
-  padding: 10px 0;
-`;
 
 const AppName = styled.h1`
   font-family: 'Brush Script MT', cursive;
@@ -30,12 +24,12 @@ const LoginInputsWrapper = styled.div`
 `;
 
 export const LoginForm: React.FC<LoginFormProps> = () => (
-  <LoginFormWrapper>
+  <UserInteractionBox>
     <AppName>Raftergram</AppName>
     <LoginInputsWrapper>
       <LoginInputs />
       <FacebookLogin />
       <ForgotPassword />
     </LoginInputsWrapper>
-  </LoginFormWrapper>
+  </UserInteractionBox>
 );
