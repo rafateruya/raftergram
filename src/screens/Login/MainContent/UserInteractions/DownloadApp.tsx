@@ -1,6 +1,10 @@
 import { Typography } from '@material-ui/core';
 import React from 'react';
 import styled from 'styled-components';
+import {
+  StoreButton,
+  StoreType,
+} from '../../../../components/StoreButton/StoreButton';
 import { strings } from '../../../../resources/strings/strings';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -19,14 +23,8 @@ const StoreButtonsWrapper = styled.div`
   justify-content: center;
 `;
 
-const ButtonPlaceholder = styled.div`
-  height: 50px;
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: blue;
-  min-width: 100px;
+const ButtonWrapper = styled.div`
+  margin: 4px;
 `;
 
 export const DownloadApp: React.FC<DownloadAppProps> = () => (
@@ -35,8 +33,12 @@ export const DownloadApp: React.FC<DownloadAppProps> = () => (
       {strings.loginScreen.downloadAppLabel}
     </Typography>
     <StoreButtonsWrapper>
-      <ButtonPlaceholder>iOS</ButtonPlaceholder>
-      <ButtonPlaceholder>Android</ButtonPlaceholder>
+      <ButtonWrapper>
+        <StoreButton type={StoreType.apple}>iOS</StoreButton>
+      </ButtonWrapper>
+      <ButtonWrapper>
+        <StoreButton type={StoreType.google}>Android</StoreButton>
+      </ButtonWrapper>
     </StoreButtonsWrapper>
   </DownloadAppWrapper>
 );
